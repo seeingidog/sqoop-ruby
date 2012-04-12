@@ -1,6 +1,29 @@
 = sqoop-ruby
 
-Description goes here.
+Simple Ruby wrapper for Sqoop JDBC <-> HDFS import/export tool.
+
+
+== Requirements and installation
+
+Requires Sqoop tool and applicable JDBC Jars. Installable via Cloudera's repos or https://github.com/cloudera/sqoop/wiki 
+
+  gem install sqoop-ruby
+
+
+== Examples
+
+Create Sqoop object
+
+  sqoop = Sqoop.new("mysql", "mysql.company.com", "company_db", "dbuser", "dbpassword", "hdfs://name-node/path/to/dir")
+
+Import all tables to HDFS
+
+  sqoop.import
+
+Export HDFS dataset to Relation database
+
+  sqoop.export("customers")  
+
 
 == Contributing to sqoop-ruby
  
