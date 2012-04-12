@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
@@ -26,6 +27,7 @@ Gem::Specification.new do |s|
     "lib/sqoop-ruby.rb",
     "spec/spec_helper.rb",
     "spec/sqoop-ruby_spec.rb",
+    "sqoop-ruby.gemspec",
     "test/helper.rb",
     "test/test_sqoop-ruby.rb"
   ]
